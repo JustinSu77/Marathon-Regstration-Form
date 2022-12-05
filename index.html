@@ -16,8 +16,44 @@
             <input type="text" id = "last_name" name = "last_name">
 
         </section>
-       
+        
+        <section class = "race_type">
+            <p>Select a Race:</p>
+            <section> <input type="radio" name = "race_type" id = "fun_run_5k" value = "fun_run_5k">
+                <label for="fun_run_5k">Fun Run 5k</label>
+            </section>
+            <section>
+                <input type="radio" name = "race_type" id = "half_marathon" value = "half_marathon">
+                <label for="half_marathon">Half Marathon</label>
+            </section>
+            <section>
+                <input type="radio" name = "race_type" id = "full_marathon" value = "full_marathon">
+                <label for="full_marathon">Full Marathon</label>
+            </section>
+           
+        </section>
 
+        <section class = "email_password">
+            <section>
+                <label for="email">Email:</label>
+                <input type="email" name = "email" required>
+                <label for="password">Password:</label>
+                <input type="password" name = "password" pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" required>
+            </section>
+        </section>
+
+        <section class = "age_group">
+            <label for="age_group">
+                Select Age Group
+            </label>
+            <select name="age_group" id="age_group" required>
+                <option value="under_18">under 18</option>
+                <option value="19-30">19-30</option>
+                <option value="30-50">30-50</option>
+                <option value="50+">50+</option>
+            </select>
+
+        </section>
         <button type = "submit">Register</button>
     </form>
 </body>
